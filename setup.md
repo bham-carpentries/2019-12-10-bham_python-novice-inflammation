@@ -26,10 +26,12 @@ the shell commands available that you've learnt already but also allows you to r
 If you're using Windows, you should run git-bash as you did for the shell lesson. After that, you need to enter the following commands:
 
 ```
-export PATH="$PATH:/c/Users/$USERNAME/AppData/Local/Continuum/anaconda3/Scripts/:/c/Users/$USERNAME/AppData/Local/Continuum/anaconda3/"
-export PATH="$PATH:/c/ProgramData/Anaconda3/Scripts/:/c/ProgramData/Anaconda3/"
+export PATH="/c/Users/$USERNAME/AppData/Local/Continuum/anaconda3/Scripts/:/c/Users/$USERNAME/AppData/Local/Continuum/anaconda3/:$PATH"
+export PATH="/c/ProgramData/Anaconda3/Scripts/:/c/ProgramData/Anaconda3/:$PATH"
 ```
 The first line is if you installed Anaconda 3 as a user, the second is if you installed it as an admin. If you're unsure which you did, put in both!
+
+If you installed Anaconda 3 to a non default directory then you will need a similar `export PATH=` command, to reflect the install location.
 
 ### Navigate to the `swc-python` folder
 
